@@ -88,11 +88,13 @@ header .links ul {
   right: 0;
   min-width: 200px;
   opacity: 0;
-  transition: 0.3s;
+  visibility: hidden;
+  transition: 0.5s;
   background-color: #f6f6f6;
 }
 header .links:hover ul{
   opacity: 1;
+  visibility: visible;
 }
 header .links ul::before {
   content: "";
@@ -142,3 +144,33 @@ header .links ul li:not(li:last-child) a {
   line-height: 1.8;
 }
 /* End Landing Section */
+/* Start Features Section */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.features .container .feature {
+  padding: 15px;
+  text-align: center;
+}
+.features .container .feature i {
+  color: var(--mainColor);
+}
+.features .container .feature h3 {
+  color: var(--secondColor);
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 42px;
+}
+.features .container .feature p {
+  color: var(--secondColor);
+  line-height: 1.8;
+  font-size: 15px;
+}
+/* End Features Section */
