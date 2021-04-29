@@ -13,9 +13,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Work Sans', sans-serif;
-  scroll-behavior: smooth;
 }
 .container {
   padding-left: 15px;
@@ -406,3 +408,88 @@ header .links ul li:not(li:last-child) a {
   }
 }
 /* End About Section */
+/* Start Contact Section */
+.contact {
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+  background-color: var(--thirdColor);
+}
+.contact .container .contact-content {
+  padding-top: var(--sectionPadding);
+  text-align: center;
+  letter-spacing: -2;
+}
+.contact .container .contact-content > p {
+  color: var(--secondColor);
+  font-size: 30px;
+  font-weight: 800;
+}
+.contact .container .contact-content a {
+  text-decoration: none;
+  color: var(--mainColor);
+  font-size: 25px;
+  font-weight: 800;
+}
+.contact .container .contact-content .contact-social p {
+  padding-top: 20px;
+  color: var(--fourthColor);
+  font-size: 15px;
+  display: inline-block;
+}
+.contact .container .contact-content .contact-social a {
+  display: inline-block;
+}
+.contact .container .contact-content .contact-social a i {
+  color: var(--fourthColor);
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .contact .container .contact-content > p {
+    font-size: 20px;
+  }
+  .contact .container .contact-content a {
+    font-size: 15px;
+  }
+  .contact .container .contact-content .contact-social p {
+    font-size: 10px;
+  }
+}
+/* End Contact Section */
+/* Start Footer */
+footer {
+  background-color: #2c4755;
+  padding: 20px;
+}
+footer .footer-content {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+footer .footer-content span {
+  color: var(--mainColor);
+}
+/* End Footer */
+/* Start Scroll To Top */
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--mainColor);
+}
+.top a {
+  text-decoration: none;
+  font-weight: 800;
+  padding-top: 6px;
+  font-size: 30px;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End Scroll To Top */
